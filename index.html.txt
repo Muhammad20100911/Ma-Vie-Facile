@@ -1,0 +1,35 @@
+<h1>🌿 La solution pour un meilleur quotidien</h1>
+
+<section id="planner">
+  <h2>🕒 Planificateur de journée</h2>
+  <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+  <button onclick="addTask()">Ajouter</button>
+  <ul id="taskList"></ul>
+</section>
+
+<section id="water">
+  <h2>💧 Rappel d’hydratation</h2>
+  <p>Verres bus : <span id="waterCount">0</span> / 8</p>
+  <button onclick="drinkWater()">J’ai bu un verre</button>
+</section>
+
+<section id="expenses">
+  <h2>💸 Suivi de dépenses</h2>
+  <input type="number" id="expenseAmount" placeholder="Montant (€)">
+  <input type="text" id="expenseDesc" placeholder="Description">
+  <button onclick="addExpense()">Ajouter</button>
+  <ul id="expenseList"></ul>
+  <p>Total : <span id="totalExpense">0</span> €</p>
+</section>
+
+<section id="wellness">
+  <h2>🧘 Astuce bien-être</h2>
+  <p id="tip">Clique pour une astuce !</p>
+  <button onclick="showTip()">Nouvelle astuce</button>
+</section>
+
+<section id="meals">
+  <h2>🍽️ Idée de repas</h2>
+  <p id="meal">Clique pour une idée !</p>
+  <button onclick="showMeal()">Trouver un repas</button>
+</section>
