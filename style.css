@@ -1,41 +1,85 @@
+/* ========================
+   Style général
+======================== */
 body {
   font-family: Arial, sans-serif;
-  background: #f4fff7;
+  background-color: #f0f8ff; /* bleu clair doux */
+  margin: 0;
+  padding: 0;
   color: #333;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
 }
 
-h1 {
+header {
+  background-color: #4CAF50; /* vert agréable */
+  color: white;
   text-align: center;
-  color: #2c7a7b;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 1.2em;
+}
+
+/* ========================
+   Sections principales
+======================== */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
 section {
-  background: white;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 12px;
+  background-color: white;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
+section h2 {
+  color: #4CAF50;
+  margin-top: 0;
+}
+
+/* ========================
+   Boutons
+======================== */
 button {
-  background: #2c7a7b;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background: #319795;
+  background-color: #45a049;
 }
 
-input {
+/* ========================
+   Inputs
+======================== */
+input[type="text"],
+input[type="number"] {
   padding: 8px;
-  margin: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid #ccc;
+  width: 60%;
+  margin-right: 10px;
 }
+
+/* ========================
+   Listes
+======================== */
+ul {
+  list-style-type:
